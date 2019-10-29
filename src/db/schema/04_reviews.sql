@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS reviews CASCADE;
+CREATE TABLE reviews (
+  id SERIAL PRIMARY KEY NOT NULL,
+  visit_id INTEGER REFERENCES visits(id) ON DELETE CASCADE,
+  line_size INTEGER,
+  entry_fee INTEGER,
+  dress_code VARCHAR(255)
+);
