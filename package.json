@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "reset": "psql -U development -d final < ./src/migrations/01_schema.sql"
+    "reset": "psql -U development -d final < ./src/migrations/01_schema.sql",
+    "serve": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -24,7 +25,8 @@
     "express": "^4.17.1",
     "node-gyp": "^6.0.0",
     "pg": "^7.12.1",
-    "pg-native": "^3.0.0"
+    "pg-native": "^3.0.0",
+    "pg-pool": "^2.0.7"
   },
   "devDependencies": {
     "nodemon": "^1.19.4"

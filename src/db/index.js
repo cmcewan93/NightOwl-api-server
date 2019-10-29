@@ -1,9 +1,10 @@
-const pg = require("pg");
+const Pool = require('pg').Pool
 
-const client = new pg.Client({
-  port: 5432,
+const client = new Pool({
   user: "development",
   password: "development",
+  host: "localhost",
+  port: 5432,
   database: "final"
 });
 
