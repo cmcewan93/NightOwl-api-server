@@ -1,11 +1,9 @@
-const router = require("express").Router();
-const { pool } = require("pg");
 const db = require("../db");
 
 //Login: Checks the database for the user's email and password to Login
 
 const userLogin = function(email, password) {
-  return pool
+  return db
     .query(
       `
   SELECT id
@@ -23,7 +21,7 @@ exports.userLogin = userLogin;
 // Register: Adds a user to the database
 
 const userRegister = function(user) {
-  return pool
+  return db
     .query(
       `
   INSERT INTO users
@@ -65,7 +63,7 @@ const getUser = function(cookieId) {
   FROM users
   `;
   queryString += `WHERE id = '${cookieId}'`;
-  return pool
+  return db
     .query(queryString)
     .then(res => res.rows)
     .catch(err => console.error(null, err.stack));

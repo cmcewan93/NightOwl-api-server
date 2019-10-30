@@ -5,7 +5,7 @@ const {
   getUser
 } = require("../controllers/usersController");
 
-router.post("login", (req, res) => {
+router.post("/login", (req, res) => {
   const { email, password } = req.body;
   userLogin(email, password)
     .then(id => {
@@ -20,10 +20,13 @@ router.post("login", (req, res) => {
     .catch(err => console.error(null, err.stack));
 });
 
-router.get(":1", (req, res) => {
-  getUser(1).then(data => {
+router.get("/:id", (req, res) => {
+  getUser(req.params.id).then(data => {
     res.json(data);
+    return data[0];
   });
 });
+
+//router.get("/", req);
 
 module.exports = router;

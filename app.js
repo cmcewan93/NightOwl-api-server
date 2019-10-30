@@ -29,7 +29,7 @@ app.use(
 );
 
 app.use("/users", userRoutes);
-//app.use("/venues", venueRoutes);
+app.use("/venues", venueRoutes);
 
 app.listen(PORT, () => {
   console.log(`Final Project listening on port ${PORT} in ${ENV} mode`);
