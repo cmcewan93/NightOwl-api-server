@@ -1,7 +1,7 @@
 //App entry point
 
 // load .env data into process.env
-//require("dotenv").config();
+require("dotenv").config();
 
 // Web server config
 const PORT = process.env.PORT || 8001;
@@ -32,5 +32,7 @@ app.use("/users", userRoutes);
 app.use("/venues", venueRoutes);
 
 app.listen(PORT, () => {
-  console.log(`Final Project listening on port ${PORT} in ${ENV} mode`);
+  console.log(
+    `Final Project listening on port ${process.env.PGPORT} in ${ENV} mode`
+  );
 });

@@ -1,11 +1,14 @@
+// load .env data into process.env
+require("dotenv").config();
+
 const Pool = require("pg").Pool;
 
 const client = new Pool({
-  user: "mengting",
-  password: "development",
-  host: "localhost",
-  port: 5432,
-  database: "final"
+  user: process.env.PGUSER,
+  password: process.env.PGPASSWORD,
+  host: process.env.PGHOST,
+  port: process.env.PGPORT,
+  database: process.env.PGDATABASE
 });
 
 client
