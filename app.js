@@ -28,8 +28,8 @@ app.use(
   })
 );
 
-app.use("/users", userRoutes);
-app.use("/venues", venueRoutes);
+app.use("/api/users", userRoutes);
+app.use("/api/venues", venueRoutes);
 
 app.listen(PORT, () => {
   console.log(
