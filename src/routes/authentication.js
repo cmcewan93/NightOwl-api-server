@@ -1,4 +1,6 @@
 const router = require("express").Router();
+const bcrypt = require("bcrypt");
+const initalizePassport = require("../passport-config");
 const {
   userLogin,
   userRegister
@@ -6,6 +8,7 @@ const {
 
 router.post("/login", (req, res) => {
   const { email, password } = req.body;
+
   userLogin(email, password)
     .then(id => {
       if (!id) {
@@ -20,8 +23,18 @@ router.post("/login", (req, res) => {
     .catch(err => console.error(null, err.stack));
 });
 
-router.post("/register", (req, res) => {
-  const user = req.body;
+router.post("/register", async (req, res) => {
+  user = req.body;
+
+  try {
+    const hashedPassword = await bcrypt.hash(req.body.password, 10);
+    console.log(hashedPassword);
+    user.password = hashedPassword;
+    console.log(user.password);
+  } catch {
+    console.error("there was an error");
+  }
+
   userRegister(user)
     .then(id => {
       if (!id) {
