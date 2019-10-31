@@ -126,27 +126,43 @@ VALUES
 
 --- REVIEWS ---
 
-INSERT INTO reviews (visit_id, line_size, entry_fee, dress_code) VALUES
-(1, 10, 10, "Casual");
+INSERT INTO reviews
+  (visit_id, line_size, entry_fee, dress_code)
+VALUES
+  (1, 10, 10, 'Casual');
 
-INSERT INTO reviews (visit_id, line_size, entry_fee, dress_code) VALUES
-(2, 20, 10, "Casual");
+INSERT INTO reviews
+  (visit_id, line_size, entry_fee, dress_code)
+VALUES
+  (2, 20, 10, 'Casual');
 
-INSERT INTO reviews (visit_id, line_size, entry_fee, dress_code) VALUES
-(3, 20, 10, "Casual");
+INSERT INTO reviews
+  (visit_id, line_size, entry_fee, dress_code)
+VALUES
+  (3, 20, 10, 'Casual');
 
-INSERT INTO reviews (visit_id, line_size, entry_fee, dress_code) VALUES
-(4, 20, 15, "Casual");
+INSERT INTO reviews
+  (visit_id, line_size, entry_fee, dress_code)
+VALUES
+  (4, 20, 15, 'Casual');
 
-INSERT INTO reviews (visit_id, line_size, entry_fee, dress_code) VALUES
-(5, 10, 0, "Casual");
+INSERT INTO reviews
+  (visit_id, line_size, entry_fee, dress_code)
+VALUES
+  (5, 10, 0, 'Casual');
 
-INSERT INTO reviews (visit_id, line_size, entry_fee, dress_code) VALUES
-(6, 10, 10, "Casual");
+INSERT INTO reviews
+  (visit_id, line_size, entry_fee, dress_code)
+VALUES
+  (6, 10, 10, 'Casual');
 
-INSERT INTO reviews (visit_id, line_size, entry_fee, dress_code) VALUES
-(7, 50, 20, "No Jeans");
+INSERT INTO reviews
+  (visit_id, line_size, entry_fee, dress_code)
+VALUES
+  (7, 50, 20, 'No Jeans');
 
 
-INSERT INTO reviews (visit_id, line_size, entry_fee, dress_code) VALUES
-(8, 5, 25, "Dress");
+INSERT INTO reviews
+  (visit_id, line_size, entry_fee, dress_code)
+VALUES
+  (8, 5, 25, 'Dress');
