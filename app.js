@@ -17,6 +17,7 @@ const userRoutes = require("./src/routes/users");
 const venueRoutes = require("./src/routes/venues");
 const authenticationRoutes = require("./src/routes/authentication");
 const trendingRoutes = require("./src/routes/trending");
+const getFemalesRoutes = require("./src/routes/getFemales");
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -34,6 +35,7 @@ app.use("/api/users", userRoutes);
 app.use("/api/venues", venueRoutes);
 app.use("/", authenticationRoutes);
 app.use("/api/trending", trendingRoutes);
+app.use("/api/getFemales", getFemalesRoutes);
 
 app.listen(PORT, () => {
   console.log(
