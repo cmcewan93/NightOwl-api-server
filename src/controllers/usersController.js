@@ -19,18 +19,16 @@ const getUser = function(cookieId) {
 exports.getUser = getUser;
 
 const getUserByEmail = email => {
-  if (!email) {
-    return undefined;
-  }
-
+  //console.log("This is the email", email);
   let queryString = `
-  SELECT *
-  FROM users
+  SELECT * from users where email = '${email}';
   `;
-  queryString += `WHERE email = '${email}'`;
   return db
     .query(queryString)
-    .then(res => res.rows)
+    .then(res => {
+      //console.log("Query results", res.rows);
+      return res.rows;
+    })
     .catch(err => console.error(null, err.stack));
 };
 exports.getUserByEmail = getUserByEmail;

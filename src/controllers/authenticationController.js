@@ -1,23 +1,18 @@
 const db = require("../db");
 const bcrypt = require("bcrypt");
-const { getUserByEmail } = require("./usersController");
+const { getUserByEmail } = require("../controllers/usersController");
 
 //Login: Checks the database for the user's email and password to Login
 const userLogin = function(email, password) {
-  getUserByEmail(email).then(user => {
-    console.log(user);
-  });
-
-  return db
-    .query(
-      `
-  SELECT id
-  FROM users
-  WHERE email = $1 AND password = $2
-  `,
-      [email, password]
-    )
-    .then(res => res.rows[0])
+  return getUserByEmail(email)
+    .then(user => {
+      hashedPassword = user[0].password;
+      if (bcrypt.compareSync(password, hashedPassword)) {
+        return user[0];
+      } else {
+        console.error("invalid password");
+      }
+    })
     .catch(err => console.error(null, err.stack));
 };
 
