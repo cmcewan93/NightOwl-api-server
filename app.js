@@ -16,6 +16,7 @@ const cookieSession = require("cookie-session");
 const userRoutes = require("./src/routes/users");
 const venueRoutes = require("./src/routes/venues");
 const authenticationRoutes = require("./src/routes/authentication");
+const trendingRoutes = require("./src/routes/trending");
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -32,6 +33,7 @@ app.use(
 app.use("/api/users", userRoutes);
 app.use("/api/venues", venueRoutes);
 app.use("/", authenticationRoutes);
+app.use("/api/trending", trendingRoutes);
 
 app.listen(PORT, () => {
   console.log(
