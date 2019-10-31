@@ -1,8 +1,13 @@
 const db = require("../db");
 const bcrypt = require("bcrypt");
+const { getUserByEmail } = require("./usersController");
 
 //Login: Checks the database for the user's email and password to Login
 const userLogin = function(email, password) {
+  getUserByEmail(email).then(user => {
+    console.log(user);
+  });
+
   return db
     .query(
       `
@@ -49,4 +54,3 @@ const userRegister = function(user) {
     .catch(err => console.error(null, err.stack));
 };
 exports.userRegister = userRegister;
-

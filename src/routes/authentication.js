@@ -1,14 +1,12 @@
 const router = require("express").Router();
 const bcrypt = require("bcrypt");
-const initalizePassport = require("../passport-config");
 const {
   userLogin,
   userRegister
 } = require("../controllers/authenticationController");
 
-router.post("/login", (req, res) => {
+router.post("/login", async (req, res) => {
   const { email, password } = req.body;
-
   userLogin(email, password)
     .then(id => {
       if (!id) {
@@ -16,7 +14,6 @@ router.post("/login", (req, res) => {
         return;
       } else {
         req.session.userId = id.id;
-        // res.redirect("/");
         res.send({ code: 201, message: "LOGGED IN" });
       }
     })
@@ -30,7 +27,7 @@ router.post("/register", async (req, res) => {
     const hashedPassword = await bcrypt.hash(req.body.password, 10);
     console.log(hashedPassword);
     user.password = hashedPassword;
-    console.log(user.password);
+    console.log('USER REGISTERED WITH ', user.password);
   } catch {
     console.error("there was an error");
   }
