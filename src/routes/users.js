@@ -1,10 +1,5 @@
 const router = require("express").Router();
-const {
-  userLogin,
-  userRegister,
-  getUser
-} = require("../controllers/usersController");
-
+const { getUser } = require("../controllers/usersController");
 
 router.get("/:id", (req, res) => {
   getUser(req.params.id).then(data => {
@@ -12,7 +7,6 @@ router.get("/:id", (req, res) => {
     return data[0];
   });
 });
-
 
 //router.get("/", req);
 
