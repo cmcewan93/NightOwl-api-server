@@ -102,13 +102,13 @@ VALUES
 INSERT INTO venues
   (name, address, city, province, country, latitude, longitude, display_picture, phone_number, email, postal_code)
 VALUES
-  ("Gatsby's Speakeasy", '82 Bathurst St', 'Toronto', 'Ontario', 'Canada', 43.6431549, -79.404923, 'http://www.blogto.com/eat_drink/2017/01/enduring-appeal-secret-bars-toronto/', '416-599-2442', 'hello@speakeasy.com', 'M5V 2P3');
+  ('Gatsbys Speakeasy', '82 Bathurst St', 'Toronto', 'Ontario', 'Canada', 43.6431549, -79.404923, 'http://www.blogto.com/eat_drink/2017/01/enduring-appeal-secret-bars-toronto/', '416-599-2442', 'hello@speakeasy.com', 'M5V 2P3');
 
 
   INSERT INTO venues
   (name, address, city, province, country, latitude, longitude, display_picture, phone_number, email, postal_code)
 VALUES
-  ("Foggy Dew Irish Pub", '803 King St W', 'Toronto', 'Ontario', 'Canada', 43.64294377731903, -79.40706269469942, 'https://ssmscdn.yp.ca/image/resize/4beeacbd-7a0f-4d34-ba8f-ee5708f4b045/ypui-d-mp-pic-gal-lg/foggy-dew-irish-alehouse-and-pub-storefront-9.jpg', '416-703-4042', 'foggydew@fabrestaurants.ca', 'M5V 1N4');
+  ('Foggy Dew Irish Pub', '803 King St W', 'Toronto', 'Ontario', 'Canada', 43.64294377731903, -79.40706269469942, 'https://ssmscdn.yp.ca/image/resize/4beeacbd-7a0f-4d34-ba8f-ee5708f4b045/ypui-d-mp-pic-gal-lg/foggy-dew-irish-alehouse-and-pub-storefront-9.jpg', '416-703-4042', 'foggydew@fabrestaurants.ca', 'M5V 1N4');
 
 --- VISITS table ---
 
