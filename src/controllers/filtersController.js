@@ -44,10 +44,10 @@ exports.getMales = getMales;
 
 const getTrending = () => {
   let queryString = `
-  SELECT COUNT(visits.user_id) AS users, name, latitude, longitude
+  SELECT COUNT(visits.user_id) AS users, name, latitude, longitude, venues.id AS venue_id
   FROM venues
   JOIN visits ON venues.id = venue_id
-  GROUP BY venues.name, venues.latitude, venues.longitude
+  GROUP BY venues.name, venues.latitude, venues.longitude, venues.id
   ORDER BY users DESC
   LIMIT 5
   `;
