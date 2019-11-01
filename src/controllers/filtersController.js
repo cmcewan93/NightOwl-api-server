@@ -20,14 +20,36 @@ const getFemales = () => {
 
 exports.getFemales = getFemales;
 
+// get males
+
+const getMales = () => {
+  let queryString = `
+  SELECT venues.id
+  FROM venues
+  JOIN visits ON venues.id = venue_id
+  JOIN users ON users.id = user_id
+  GROUP BY venues.id
+  HAVING
+  COUNT(CASE WHEN users.gender='Female' THEN 1 ELSE NULL END) < COUNT(CASE WHEN users.gender='Male' THEN 1 ELSE NULL END);
+  `;
+  return db
+    .query(queryString)
+    .then(res => res.rows)
+    .catch(err => console.error(null, err.stack));
+};
+
+exports.getMales = getMales;
+
 // get Trending
 
 const getTrending = () => {
   let queryString = `
-  SELECT COUNT(user_id) AS users, venue_id
-FROM visits
-GROUP BY venue_id
-ORDER BY venue_id; 
+  SELECT COUNT(visits.user_id) AS users, name, latitude, longitude
+  FROM venues
+  JOIN visits ON venues.id = venue_id
+  GROUP BY venues.name, venues.latitude, venues.longitude
+  ORDER BY users DESC
+  LIMIT 5
   `;
   return db
     .query(queryString)
