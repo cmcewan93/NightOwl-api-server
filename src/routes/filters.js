@@ -1,8 +1,19 @@
 const router = require("express").Router();
-const { getFemales, getTrending } = require("../controllers/filtersController");
+const {
+  getFemales,
+  getTrending,
+  getMales
+} = require("../controllers/filtersController");
 
 router.get("/morefemales", (req, res) => {
   getFemales().then(data => {
+    res.json(data);
+    return data;
+  });
+});
+
+router.get("/moremales", (req, res) => {
+  getMales().then(data => {
     res.json(data);
     return data;
   });

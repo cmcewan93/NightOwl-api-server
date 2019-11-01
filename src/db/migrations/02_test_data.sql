@@ -180,7 +180,10 @@ INSERT INTO visits
   (user_id, venue_id)
 VALUES
   (8, 2);
-
+INSERT INTO visits
+  (user_id, venue_id)
+VALUES
+  (1, 3);
 --- REVIEWS ---
 
 INSERT INTO reviews
