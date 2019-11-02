@@ -2,7 +2,8 @@ const router = require("express").Router();
 const {
   getFemales,
   getTrending,
-  getMales
+  getMales,
+  setSearch
 } = require("../controllers/filtersController");
 
 router.get("/morefemales", (req, res) => {
@@ -21,6 +22,14 @@ router.get("/moremales", (req, res) => {
 
 router.get("/trending", (req, res) => {
   getTrending().then(data => {
+    res.json(data);
+    return data;
+  });
+});
+module.exports = router;
+
+router.get("/search/:name", (req, res) => {
+  setSearch(req.params.name).then(data => {
     res.json(data);
     return data;
   });

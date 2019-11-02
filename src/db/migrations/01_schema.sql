@@ -9,7 +9,6 @@ CASCADE;
 DROP TABLE IF EXISTS stories
 CASCADE;
 
-CREATE EXTENSION fuzzystrmatch;
 
 CREATE TABLE users
 (

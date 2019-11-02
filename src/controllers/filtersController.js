@@ -59,8 +59,17 @@ const getTrending = () => {
 
 exports.getTrending = getTrending;
 
-const setSearch = () => {
+const setSearch = name => {
+  console.log("COLIN", name);
   let queryString = `
-  SELECT name
+  SELECT id AS venue_id, name, latitude, longitude 
+  FROM venues 
+  WHERE name LIKE '%${name}%'
   `;
-}
+  return db
+    .query(queryString)
+    .then(res => res.rows)
+    .catch(err => console.error(null, err.stack));
+};
+
+exports.setSearch = setSearch;
