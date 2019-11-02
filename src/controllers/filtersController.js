@@ -58,3 +58,9 @@ const getTrending = () => {
 };
 
 exports.getTrending = getTrending;
+
+const setSearch = () => {
+  let queryString = `
+  SELECT name
+  `;
+}
