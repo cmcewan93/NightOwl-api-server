@@ -32,6 +32,7 @@ router.post("/register", async (req, res) => {
 
   userRegister(user)
     .then(id => {
+      console.log("dfasdfasfa", id[0].id);
       if (!id) {
         res.send({ error: "Email already exists!" });
         return;

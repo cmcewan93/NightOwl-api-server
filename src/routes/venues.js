@@ -1,6 +1,6 @@
 const router = require("express").Router();
 
-const { getVenues } = require("../controllers/venuesController");
+const { getVenues} = require("../controllers/venuesController");
 
 router.get("/", (req, res) => {
   getVenues().then(data => {
@@ -8,5 +8,7 @@ router.get("/", (req, res) => {
     return data;
   });
 });
+
+
 
 module.exports = router;

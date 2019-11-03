@@ -23,7 +23,7 @@ const visitRoutes = require("./src/routes/visits");
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// Cookie session setup
+//Cookie session setup
 app.use(
   cookieSession({
     name: "session",

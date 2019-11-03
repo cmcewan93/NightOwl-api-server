@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { getReviews } = require("../controllers/reviewsController");
+const { getReviews, getReviewsByVenueId } = require("../controllers/reviewsController");
 
 router.get("/", (req, res) => {
   getReviews().then(data => {
@@ -8,4 +8,10 @@ router.get("/", (req, res) => {
   });
 });
 
+router.get("/:id", (req, res) => {
+  getReviewsByVenueId().then(data => {
+    res.json(data);
+    return data;
+  });
+});
 module.exports = router;
