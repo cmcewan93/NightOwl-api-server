@@ -1,6 +1,9 @@
 const router = require("express").Router();
 
-const { getVisits, getVisitsByVenueId } = require("../controllers/visitsController");
+const {
+  getVisits,
+  getVisitsByVenueId
+} = require("../controllers/visitsController");
 
 router.get("/", (req, res) => {
   getVisits().then(data => {

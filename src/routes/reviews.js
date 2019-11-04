@@ -9,7 +9,7 @@ router.get("/", (req, res) => {
 });
 
 router.get("/:id", (req, res) => {
-  getReviewsByVenueId().then(data => {
+  getReviewsByVenueId(req.params.id).then(data => {
     res.json(data);
     return data;
   });
