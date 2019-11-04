@@ -110,6 +110,37 @@ VALUES
 VALUES
   ('Foggy Dew Irish Pub', '803 King St W', 'Toronto', 'Ontario', 'Canada', 43.64294377731903, -79.40706269469942, 'https://ssmscdn.yp.ca/image/resize/4beeacbd-7a0f-4d34-ba8f-ee5708f4b045/ypui-d-mp-pic-gal-lg/foggy-dew-irish-alehouse-and-pub-storefront-9.jpg', '416-703-4042', 'foggydew@fabrestaurants.ca', 'M5V 1N4');
 
+  INSERT INTO venues
+  (name, address, city, province, country, latitude, longitude, display_picture, phone_number, email, postal_code)
+VALUES
+  ('Pennies', '127 Strachan Ave', 'Toronto', 'Ontario', 'Canada', 43.64328, -79.4143077, 'https://media.blogto.com/listings/20180827_Pennies.jpg?w=2048&cmd=resize_then_crop&height=1365&quality=70', '647-748-4800', 'hi@pennies.bar', 'M6J 2S7');
+
+    INSERT INTO venues
+  (name, address, city, province, country, latitude, longitude, display_picture, phone_number, email, postal_code)
+VALUES
+  ('Williams Landing', '120 Lynn Williams St', 'Toronto', 'Ontario', 'Canada', 43.6390087, -79.4197288, 'https://s3-media3.fl.yelpcdn.com/bphoto/chrkXUV-3wuChdJduLBW9w/l.jpg', '647-340-8008', 'hi@williamslanding.ca', 'M6K 3P6');
+
+    INSERT INTO venues
+  (name, address, city, province, country, latitude, longitude, display_picture, phone_number, email, postal_code)
+VALUES
+  ('Barcelona Tavern', '109 Atlantic Avenue', 'Toronto', 'Ontario', 'Canada', 43.6396713, -79.422157, 'https://media-cdn.tripadvisor.com/media/photo-s/0f/19/ba/28/photo0jpg.jpg', '416-531-0757', 'mitch@barcelonatavern.com', 'M6K 1X4');
+
+  INSERT INTO venues
+  (name, address, city, province, country, latitude, longitude, display_picture, phone_number, email, postal_code)
+VALUES
+  ('Lucky Shrike Bar', '850 Dundas St W', 'Toronto', 'Ontario', 'Canada', 43.6515536, -79.4124946, 'https://media.blogto.com/uploads/2017/05/03/20150706-luckyshrike2048-10.jpg?h=2500&cmd=resize&quality=70&w=1400', '416-815-7777', 'hello@luckyshrike.com', 'M6J 1V5');
+
+   INSERT INTO venues
+  (name, address, city, province, country, latitude, longitude, display_picture, phone_number, email, postal_code)
+VALUES
+  ('Cocktail Bar', '923 Dundas St W', 'Toronto', 'Ontario', 'Canada', 43.6506993, -79.4154659, 'https://media.blogto.com/uploads/2017/08/11/20170726-2048-CocktailBar5.jpg?cmd=resize&quality=70&w=1400&height=2500', '416-792-7511', 'reservations@hoofcocktailbar.com', 'M6J 1W3');
+
+
+  INSERT INTO venues
+  (name, address, city, province, country, latitude, longitude, display_picture, phone_number, email, postal_code)
+VALUES
+  ('PrettyUgly Bar', '1237 Queen St W', 'Toronto', 'Ontario', 'Canada', 43.641689, -79.4325377, 'https://media.blogto.com/uploads/2016/11/27/20161122-2048-PrettyUgly2.jpg?h=2000&cmd=resize&quality=99&w=710', '416-377-5711', 'hi@prettyuglybar.com', 'M6K 1L5');
+
 --- VISITS table ---
 
 INSERT INTO visits
@@ -184,6 +215,140 @@ INSERT INTO visits
   (user_id, venue_id)
 VALUES
   (1, 3);
+  INSERT INTO visits
+  (user_id, venue_id)
+VALUES
+  (2, 3);
+INSERT INTO visits
+  (user_id, venue_id)
+VALUES
+  (3, 3);
+  INSERT INTO visits
+  (user_id, venue_id)
+VALUES
+  (1, 4);
+  INSERT INTO visits
+  (user_id, venue_id)
+VALUES
+  (2, 5);
+  INSERT INTO visits
+  (user_id, venue_id)
+VALUES
+  (4, 6);
+  INSERT INTO visits
+  (user_id, venue_id)
+VALUES
+  (4, 7);
+  INSERT INTO visits
+  (user_id, venue_id)
+VALUES
+  (1, 8);
+  INSERT INTO visits
+  (user_id, venue_id)
+VALUES
+  (1, 9);
+  INSERT INTO visits
+  (user_id, venue_id)
+VALUES
+  (1, 10);
+  INSERT INTO visits
+  (user_id, venue_id)
+VALUES
+  (1, 11);
+  INSERT INTO visits
+  (user_id, venue_id)
+VALUES
+  (1, 12);
+  INSERT INTO visits
+  (user_id, venue_id)
+VALUES
+  (2, 12);
+  INSERT INTO visits
+  (user_id, venue_id)
+VALUES
+  (3, 12);
+  INSERT INTO visits
+  (user_id, venue_id)
+VALUES
+  (4, 12);
+  INSERT INTO visits
+  (user_id, venue_id)
+VALUES
+  (5, 12);
+INSERT INTO visits
+  (user_id, venue_id)
+VALUES
+  (3, 12);
+  INSERT INTO visits
+  (user_id, venue_id)
+VALUES
+  (1, 13);
+  INSERT INTO visits
+  (user_id, venue_id)
+VALUES
+  (3, 13);
+  INSERT INTO visits
+  (user_id, venue_id)
+VALUES
+  (4, 13);
+  INSERT INTO visits
+  (user_id, venue_id)
+VALUES
+  (5, 13);
+  INSERT INTO visits
+  (user_id, venue_id)
+VALUES
+  (2, 13);
+  INSERT INTO visits
+  (user_id, venue_id)
+VALUES
+  (1, 14);
+  INSERT INTO visits
+  (user_id, venue_id)
+VALUES
+  (2, 14);
+  INSERT INTO visits
+  (user_id, venue_id)
+VALUES
+  (3, 14);
+  INSERT INTO visits
+  (user_id, venue_id)
+VALUES
+  (3, 15);
+  INSERT INTO visits
+  (user_id, venue_id)
+VALUES
+  (4, 15);
+  INSERT INTO visits
+  (user_id, venue_id)
+VALUES
+  (5, 16);
+  INSERT INTO visits
+  (user_id, venue_id)
+VALUES
+  (6, 16);
+  INSERT INTO visits
+  (user_id, venue_id)
+VALUES
+  (6, 17);
+  INSERT INTO visits
+  (user_id, venue_id)
+VALUES
+  (1, 17);
+  INSERT INTO visits
+  (user_id, venue_id)
+VALUES
+  (2, 17);
+  INSERT INTO visits
+  (user_id, venue_id)
+VALUES
+  (2, 18);
+  INSERT INTO visits
+  (user_id, venue_id)
+VALUES
+  (1, 18);
+
+
 --- REVIEWS ---
 
 INSERT INTO reviews
