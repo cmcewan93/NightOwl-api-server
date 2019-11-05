@@ -28,3 +28,8 @@ const getReviewsByVenueId = function(venue_id) {
     .catch(err => console.error(null, err.stack));
 };
 exports.getReviewsByVenueId = getReviewsByVenueId;
+
+const addReview = function(review) {
+//TODO: create review query
+}
+exports.addReview = addReview;
