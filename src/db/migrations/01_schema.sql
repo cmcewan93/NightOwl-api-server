@@ -52,13 +52,6 @@ CREATE TABLE reviews
   visit_id INTEGER REFERENCES visits(id) ON DELETE CASCADE,
   line_size INTEGER,
   entry_fee INTEGER,
-  dress_code VARCHAR(255)
-);
-
-CREATE TABLE stories
-(
-  id SERIAL PRIMARY KEY NOT NULL,
-  review_id INTEGER REFERENCES reviews(id) ON DELETE CASCADE,
-  video VARCHAR(255),
-  image VARCHAR(255)
+  dress_code VARCHAR(255),
+  img VARCHAR(600)
 );
