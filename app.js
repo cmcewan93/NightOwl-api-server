@@ -20,7 +20,7 @@ const filterRoutes = require("./src/routes/filters");
 const reviewRoutes = require("./src/routes/reviews");
 const visitRoutes = require("./src/routes/visits");
 
-app.use(bodyParser.json());
+app.use(bodyParser.json({ limit: "50mb" }));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 //Cookie session setup

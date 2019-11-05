@@ -27,4 +27,5 @@ const getReviewsByVenueId = function(venue_id) {
     .then(res => res.rows)
     .catch(err => console.error(null, err.stack));
 };
+
 exports.getReviewsByVenueId = getReviewsByVenueId;
