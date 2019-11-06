@@ -352,24 +352,28 @@ VALUES
 --- REVIEWS ---
 
 INSERT INTO reviews
-  (visit_id, line_size, entry_fee, dress_code)
+  (visit_id, line_size, entry_fee, dress_code,img)
 VALUES
-  (1, 10, 10, 'Casual', 'https://images.unsplash.com/photo-1545128485-c400e7702796?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60');
+  -- bella hadid
+  (1, 10, 10, 'Casual', 'http://picture-cdn.wheretoget.it/32g06n-l-610x610-dress-bella+hadid-model-celebrity+style-celebrity-bodycon+dress-black+dress-sexy+dress-clubwear-club+dress-latex+dress-leather+dress-sandals-black+sandals-clutch.jpg');
 
+-- candice
 INSERT INTO reviews
-  (visit_id, line_size, entry_fee, dress_code)
+  (visit_id, line_size, entry_fee, dress_code,img)
 VALUES
-  (2, 20, 10, 'Casual', '');
+  (2, 20, 10, 'Casual', 'https://i.pinimg.com/736x/10/69/da/1069dafd0b63379a0ba7fffed806b070--victorias-secret-models-victoria-secret-fashion-show.jpg');
 
-INSERT INTO reviews
-  (visit_id, line_size, entry_fee, dress_code, img)
-VALUES
-  (3, 20, 10, 'Casual', '');
-
+-- Justin 
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img)
 VALUES
-  (4, 20, 15, 'Casual', '');
+  (3, 20, 10, 'Casual', 'https://pmchollywoodlife.files.wordpress.com/2018/06/justin-bieber-hailey-baldwin-hit-club-in-miami-backgrid-ftr.jpg?w=620');
+
+-- Kendall
+INSERT INTO reviews
+  (visit_id, line_size, entry_fee, dress_code, img)
+VALUES
+  (4, 20, 15, 'Casual', 'https://i.pinimg.com/originals/76/d0/7c/76d07cecab6e1cdd6f50e14999b3c3ff.jpg');
 
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img)
