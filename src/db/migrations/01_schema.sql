@@ -6,8 +6,7 @@ DROP TABLE IF EXISTS venues
 CASCADE;
 DROP TABLE IF EXISTS reviews
 CASCADE;
-DROP TABLE IF EXISTS stories
-CASCADE;
+
 
 
 CREATE TABLE users
@@ -53,5 +52,6 @@ CREATE TABLE reviews
   line_size INTEGER,
   entry_fee INTEGER,
   dress_code VARCHAR(255),
+  music_type VARCHAR(255),
   img VARCHAR(600)
 );
