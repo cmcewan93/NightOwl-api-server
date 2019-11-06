@@ -352,12 +352,12 @@ VALUES
 --- REVIEWS ---
 
 INSERT INTO reviews
-  (visit_id, line_size, entry_fee, dress_code)
+  (visit_id, line_size, entry_fee, dress_code, img)
 VALUES
   (1, 10, 10, 'Casual', 'https://images.unsplash.com/photo-1545128485-c400e7702796?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60');
 
 INSERT INTO reviews
-  (visit_id, line_size, entry_fee, dress_code)
+  (visit_id, line_size, entry_fee, dress_code, img)
 VALUES
   (2, 20, 10, 'Casual', '');
 
@@ -390,3 +390,43 @@ INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img)
 VALUES
   (8, 5, 25, 'Dress', '');
+
+INSERT INTO reviews
+  (visit_id, line_size, entry_fee, dress_code, img)
+VALUES
+  (18, 10, 50, 'Dress', '');
+
+INSERT INTO reviews
+  (visit_id, line_size, entry_fee, dress_code, img)
+VALUES
+  (19, 20, 5, 'No Jeans', '');
+
+INSERT INTO reviews
+  (visit_id, line_size, entry_fee, dress_code, img)
+VALUES
+  (20, 15, 25, 'No Jeans', '');
+
+INSERT INTO reviews
+  (visit_id, line_size, entry_fee, dress_code, img)
+VALUES
+  (21, 15, 5, 'Dress', '');
+
+INSERT INTO reviews
+  (visit_id, line_size, entry_fee, dress_code, img)
+VALUES
+  (22, 100, 1, 'None', '');
+
+INSERT INTO reviews
+  (visit_id, line_size, entry_fee, dress_code, img)
+VALUES
+  (23, 5, 20, 'No Jeans', '');
+
+INSERT INTO reviews
+  (visit_id, line_size, entry_fee, dress_code, img)
+VALUES
+  (24, 10, 30, 'Dress', '');
+
+INSERT INTO reviews
+  (visit_id, line_size, entry_fee, dress_code, img)
+VALUES
+  (25, 8, 55, 'Dress', '');
