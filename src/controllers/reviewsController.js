@@ -31,6 +31,30 @@ const getReviewsByVenueId = function(venue_id) {
 exports.getReviewsByVenueId = getReviewsByVenueId;
 
 const addReview = function(review) {
-//TODO: create review query
-}
+  return db
+    .query(
+      `
+  INSERT INTO reviews
+  (
+  visit_id,
+  line_size,
+  entry_fee,
+  dress_code,
+  img
+  )
+  VALUES
+  ($1, $2, $3, $4, $5) RETURNING *
+  `,
+      [
+        review.visit_id,
+        review.line_size,
+        review.entry_fee,
+        review.dress_code,
+        review.img
+      ]
+    )
+    .then(res => res.rows)
+    .catch(err => console.error(null, err.stack));
+};
+
 exports.addReview = addReview;
