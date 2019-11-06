@@ -1,4 +1,4 @@
-SELECT id, line_size
+SELECT DISTINCT id
 FROM (
   SELECT venues.id, reviews.line_size
   FROM venues

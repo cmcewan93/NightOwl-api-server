@@ -1,4 +1,4 @@
-SELECT id, entry_fee
+SELECT DISTINCT id
 FROM (
   SELECT venues.id, reviews.entry_fee
   FROM venues
