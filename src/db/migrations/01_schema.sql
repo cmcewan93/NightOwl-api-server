@@ -53,5 +53,6 @@ CREATE TABLE reviews
   line_size INTEGER,
   entry_fee INTEGER,
   dress_code VARCHAR(255),
+  music_type VARCHAR(255),
   img VARCHAR(600)
 );

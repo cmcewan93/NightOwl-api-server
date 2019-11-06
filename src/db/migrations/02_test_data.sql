@@ -75,7 +75,7 @@ INSERT INTO venues
 VALUES
   ('Fiction', '180 Pearl St', 'Toronto', 'Ontario', 'Canada', 43.6475749, -79.3913, 'https://images.unsplash.com/photo-1558047291-26cc184812b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80', '647-352-5505', 'fictionclub.ca', 'M5J 1L5');
 
-
+-- 7
 INSERT INTO venues
   (name, address, city, province, country, latitude, longitude, display_picture, phone_number, email, postal_code)
 VALUES
@@ -93,7 +93,7 @@ INSERT INTO venues
 VALUES
   ('Cake Bar & Nightclub', '214 Adelaide St W', 'Toronto', 'Ontario', 'Canada', 43.6485944, -79.3898244, 'https://images.unsplash.com/photo-1562049070-7e003d30a3d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80', '416599-2442', 'hello@cakebartoronto.com', 'M5H 1W7');
 
-
+-- 10
 INSERT INTO venues
   (name, address, city, province, country, latitude, longitude, display_picture, phone_number, email, postal_code)
 VALUES
@@ -154,11 +154,11 @@ VALUES
 INSERT INTO visits
   (user_id, venue_id)
 VALUES
-  (2, 1);
+  (7, 3);
 INSERT INTO visits
   (user_id, venue_id)
 VALUES
-  (3, 1);
+  (10, 4);
 INSERT INTO visits
   (user_id, venue_id)
 VALUES
@@ -359,7 +359,7 @@ VALUES
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img)
 VALUES
-  (1, 8, 10, 'semiFormal', 'https://images.unsplash.com/photo-1567530328765-46f3cadd0afb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+  (3, 8, 10, 'semiFormal', 'https://images.unsplash.com/photo-1567530328765-46f3cadd0afb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
 
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img)
@@ -369,7 +369,7 @@ VALUES
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img)
 VALUES
-  (1, 9, 15, 'semiFormal', 'https://images.unsplash.com/photo-1557246309-8579c1083c92?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+  (4, 9, 15, 'semiFormal', 'https://images.unsplash.com/photo-1557246309-8579c1083c92?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
 
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img)
@@ -379,7 +379,7 @@ VALUES
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img)
 VALUES
-  (1, 10, 10, 'formal', 'https://images.unsplash.com/photo-1560783218-c7f18e80d398?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+  (4, 10, 10, 'formal', 'https://images.unsplash.com/photo-1560783218-c7f18e80d398?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
 
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img)
@@ -394,7 +394,7 @@ VALUES
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img)
 VALUES
-  (1, 10, 50, 'formal', 'https://images.unsplash.com/photo-1437418747212-8d9709afab22?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+  (3, 10, 50, 'formal', 'https://images.unsplash.com/photo-1437418747212-8d9709afab22?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
 
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img)
@@ -404,7 +404,7 @@ VALUES
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img)
 VALUES
-  (1, 5, 25, 'none', 'https://images.unsplash.com/photo-1566053936041-d607ea0578b5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+  (3, 5, 25, 'none', 'https://images.unsplash.com/photo-1566053936041-d607ea0578b5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
 
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img)
@@ -419,7 +419,7 @@ VALUES
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img)
 VALUES
-  (2, 5, 20, 'none', 'https://images.unsplash.com/photo-1508695666381-69deeaa78ccb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80');
+  (4, 5, 20, 'none', 'https://images.unsplash.com/photo-1508695666381-69deeaa78ccb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80');
 
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img)
@@ -434,7 +434,7 @@ VALUES
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img)
 VALUES
-  (2, 8, 55, 'blackTie', 'https://images.unsplash.com/photo-1563292111-3a9aae753ff0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=333&q=80');
+  (3, 8, 55, 'blackTie', 'https://images.unsplash.com/photo-1563292111-3a9aae753ff0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=333&q=80');
 
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img)
@@ -444,7 +444,7 @@ VALUES
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img)
 VALUES
-  (2, 7, 55, 'blackTie', 'https://images.unsplash.com/photo-1534551039924-409372dd29c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+  (4, 7, 55, 'blackTie', 'https://images.unsplash.com/photo-1534551039924-409372dd29c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
 
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img)
@@ -454,7 +454,7 @@ VALUES
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img)
 VALUES
-  (2, 8, 55, 'blackTie', 'https://images.unsplash.com/photo-1568640369442-8b56cfe1e38e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+  (3, 8, 55, 'blackTie', 'https://images.unsplash.com/photo-1568640369442-8b56cfe1e38e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
 
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img)
@@ -464,13 +464,13 @@ VALUES
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img)
 VALUES
-  (2, 8, 55, 'casual', 'https://images.unsplash.com/photo-1539758462369-43adaa19bc1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+  (4, 8, 55, 'casual', 'https://images.unsplash.com/photo-1539758462369-43adaa19bc1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
 
 -- bieber
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img)
 VALUES
-  (2, 8, 55, 'casual', 'https://pmchollywoodlife.files.wordpress.com/2018/06/justin-bieber-hailey-baldwin-hit-club-in-miami-backgrid-ftr.jpg?w=620');
+  (4, 8, 55, 'casual', 'https://pmchollywoodlife.files.wordpress.com/2018/06/justin-bieber-hailey-baldwin-hit-club-in-miami-backgrid-ftr.jpg?w=620');
 
 -- bieber
 INSERT INTO reviews
@@ -489,7 +489,7 @@ VALUES
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img)
 VALUES
-  (1, 8, 55, 'formal', 'https://celebmafia.com/wp-content/uploads/2017/01/kendall-jenner-goes-to-the-nice-guy-club-to-ring-in-the-new-year-for-2017-in-west-hollywood-12-30-2016-1.jpg');
+  (3, 8, 55, 'formal', 'https://celebmafia.com/wp-content/uploads/2017/01/kendall-jenner-goes-to-the-nice-guy-club-to-ring-in-the-new-year-for-2017-in-west-hollywood-12-30-2016-1.jpg');
 
 
 -- Bella 
