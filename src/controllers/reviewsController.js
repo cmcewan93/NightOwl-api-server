@@ -16,11 +16,11 @@ exports.getReviews = getReviews;
 
 const getReviewsByVenueId = function(venue_id) {
   let queryString = `
-  SELECT visits.id AS visit_id, line_size, entry_fee, dress_code
+  SELECT visits.id AS visit_id, line_size, entry_fee, dress_code, img, music_type
   FROM reviews
     JOIN visits ON visits.id = reviews.visit_id
   WHERE visits.venue_id = ${venue_id}
-  GROUP BY visits.id, line_size, entry_fee, dress_code
+  GROUP BY visits.id, line_size, entry_fee, dress_code, img, music_type
  `;
   return db
     .query(queryString)

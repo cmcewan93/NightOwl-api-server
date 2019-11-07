@@ -1,6 +1,6 @@
-SELECT DISTINCT id
+SELECT DISTINCT id, latitude, longitude, name
 FROM (
-  SELECT venues.id, reviews.line_size
+  SELECT venues.id, reviews.line_size, venues.latitude, venues.longitude, venues.name
   FROM venues
     INNER JOIN visits
     ON venues.id = visits.venue_id
