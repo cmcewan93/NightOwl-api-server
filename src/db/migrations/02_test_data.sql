@@ -354,17 +354,17 @@ VALUES
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img,music_type)
 VALUES
-  (1, 10, 10, 'none', 'https://images.unsplash.com/flagged/photo-1565829120532-c85c4cbb503c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60', 'Top40');
+  (1, 10, 0, 'none', 'https://images.unsplash.com/flagged/photo-1565829120532-c85c4cbb503c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60', 'Top40');
 
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img,music_type)
 VALUES
-  (3, 8, 10, 'semiFormal', 'https://images.unsplash.com/photo-1567530328765-46f3cadd0afb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60', 'Country');
+  (3, 8, 14, 'semiFormal', 'https://images.unsplash.com/photo-1567530328765-46f3cadd0afb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60', 'Country');
 
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img,music_type)
 VALUES
-  (1, 5, 10, 'none', 'https://images.unsplash.com/photo-1549779930-f9b29ebe3a1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60', 'Rock');
+  (1, 5, 6, 'none', 'https://images.unsplash.com/photo-1549779930-f9b29ebe3a1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60', 'Rock');
 
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img,music_type)
@@ -374,22 +374,17 @@ VALUES
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img,music_type)
 VALUES
-  (1, 6, 0, 'none', 'https://images.unsplash.com/photo-1547074236-726a065e5ddc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60', 'Rock');
+  (1, 6, 5, 'none', 'https://images.unsplash.com/photo-1547074236-726a065e5ddc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60', 'Rock');
 
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img,music_type)
 VALUES
-  (4, 10, 10, 'formal', 'https://images.unsplash.com/photo-1560783218-c7f18e80d398?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60', 'Top40');
+  (4, 10, 15, 'formal', 'https://images.unsplash.com/photo-1560783218-c7f18e80d398?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60', 'Top40');
 
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img,music_type)
 VALUES
   (1, 7, 20, 'none', 'https://images.unsplash.com/photo-1538833726256-445b558d6078?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60', 'Edm');
-
-INSERT INTO reviews
-  (visit_id, line_size, entry_fee, dress_code, img,music_type)
-VALUES
-  (1, 5, 25, 'none', 'https://images.unsplash.com/photo-1559136212-dbdbb5bafca1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60', 'Rock');
 
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img,music_type)
@@ -434,12 +429,12 @@ VALUES
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img,music_type)
 VALUES
-  (3, 8, 55, 'blackTie', 'https://images.unsplash.com/photo-1563292111-3a9aae753ff0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=333&q=80', 'Edm');
+  (3, 8, 45, 'blackTie', 'https://images.unsplash.com/photo-1563292111-3a9aae753ff0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=333&q=80', 'Edm');
 
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img,music_type)
 VALUES
-  (2, 8, 55, 'blackTie', 'https://images.unsplash.com/photo-1535927669004-59b3cb948d6a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60', 'Top40');
+  (2, 8, 15, 'blackTie', 'https://images.unsplash.com/photo-1535927669004-59b3cb948d6a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60', 'Top40');
 
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img,music_type)
@@ -449,47 +444,43 @@ VALUES
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img,music_type)
 VALUES
-  (2, 8, 55, 'blackTie', 'https://images.unsplash.com/photo-1564101746057-82e2234a7863?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60', 'HipHop');
+  (2, 8, 25, 'blackTie', 'https://images.unsplash.com/photo-1564101746057-82e2234a7863?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60', 'HipHop');
 
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img,music_type)
 VALUES
-  (3, 8, 55, 'blackTie', 'https://images.unsplash.com/photo-1568640369442-8b56cfe1e38e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60', 'Edm');
+  (3, 8, 15, 'blackTie', 'https://images.unsplash.com/photo-1568640369442-8b56cfe1e38e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60', 'Edm');
 
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img,music_type)
 VALUES
-  (2, 8, 55, 'casual', 'https://images.unsplash.com/photo-1540019838667-d61df4d4d92d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60', 'Country');
+  (2, 8, 25, 'casual', 'https://images.unsplash.com/photo-1540019838667-d61df4d4d92d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60', 'Country');
 
-INSERT INTO reviews
-  (visit_id, line_size, entry_fee, dress_code, img,music_type)
-VALUES
-  (4, 8, 55, 'casual', 'https://images.unsplash.com/photo-1539758462369-43adaa19bc1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60', 'Rap');
 
 -- bieber
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img,music_type)
 VALUES
-  (4, 8, 55, 'casual', 'https://pmchollywoodlife.files.wordpress.com/2018/06/justin-bieber-hailey-baldwin-hit-club-in-miami-backgrid-ftr.jpg?w=620', 'Edm');
+  (1, 8, 15, 'casual', 'https://pmchollywoodlife.files.wordpress.com/2018/06/justin-bieber-hailey-baldwin-hit-club-in-miami-backgrid-ftr.jpg?w=620', 'Edm');
 
 -- bieber
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img,music_type)
 VALUES
-  (1, 8, 55, 'casual', 'https://media1.popsugar-assets.com/files/thumbor/lApBCpKOesoYXoMTeKnKEITGIz8/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2014/02/06/788/n/1922398/12041547b5c5a194_467251297/i/Justin-Bieber-Shirtless-Club-Diddy.jpg', 'Top40');
+  (1, 8, 5, 'casual', 'https://media1.popsugar-assets.com/files/thumbor/lApBCpKOesoYXoMTeKnKEITGIz8/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2014/02/06/788/n/1922398/12041547b5c5a194_467251297/i/Justin-Bieber-Shirtless-Club-Diddy.jpg', 'Top40');
 
 
 -- kendall
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img,music_type)
 VALUES
-  (2, 8, 55, 'formal', 'http://celebdonut.com/wp-content/uploads/2016/08/kendall-jenner-arrives-at-the-nice-guy-club-in-west-hollywood-1.jpg', 'HipHop');
+  (2, 8, 18, 'formal', 'http://celebdonut.com/wp-content/uploads/2016/08/kendall-jenner-arrives-at-the-nice-guy-club-in-west-hollywood-1.jpg', 'HipHop');
 
 
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img,music_type)
 VALUES
-  (3, 8, 55, 'formal', 'https://celebmafia.com/wp-content/uploads/2017/01/kendall-jenner-goes-to-the-nice-guy-club-to-ring-in-the-new-year-for-2017-in-west-hollywood-12-30-2016-1.jpg', 'Rap');
+  (3, 8, 10, 'formal', 'https://celebmafia.com/wp-content/uploads/2017/01/kendall-jenner-goes-to-the-nice-guy-club-to-ring-in-the-new-year-for-2017-in-west-hollywood-12-30-2016-1.jpg', 'Rap');
 
 
 -- Bella 
@@ -497,31 +488,16 @@ VALUES
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img,music_type)
 VALUES
-  (2, 8, 55, 'none', 'https://i.pinimg.com/originals/93/27/0e/93270e467e92666bc0a013f3c43111b8.jpg', 'Edm');
+  (2, 8, 45, 'none', 'https://i.pinimg.com/originals/93/27/0e/93270e467e92666bc0a013f3c43111b8.jpg', 'Edm');
 
 
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img,music_type)
 VALUES
-  (1, 8, 55, 'none', 'http://images6.fanpop.com/image/photos/39300000/Bella-hadid-bella-hadid-39357318-1280-1270.jpg', 'Rap');
+  (1, 8, 50, 'none', 'http://images6.fanpop.com/image/photos/39300000/Bella-hadid-bella-hadid-39357318-1280-1270.jpg', 'Rap');
 
 
 -- test data
-
-INSERT INTO reviews
-  (visit_id, line_size, entry_fee, dress_code, img,music_type)
-VALUES
-  (5, 10, 5, 'casual', 'https://images.unsplash.com/photo-1539758462369-43adaa19bc1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60', 'HipHop');
-
-INSERT INTO reviews
-  (visit_id, line_size, entry_fee, dress_code, img,music_type)
-VALUES
-  (6, 12, 9, 'casual', 'https://images.unsplash.com/photo-1539758462369-43adaa19bc1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60', 'Rap');
-
-INSERT INTO reviews
-  (visit_id, line_size, entry_fee, dress_code, img,music_type)
-VALUES
-  (7, 4, 7, 'semiFormal', 'https://images.unsplash.com/photo-1539758462369-43adaa19bc1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60', 'Rap');
 
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img,music_type)

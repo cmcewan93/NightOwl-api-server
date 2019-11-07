@@ -6,7 +6,8 @@ const {
   setSearch,
   getShortestLine,
   getCheapest,
-  getPriciest
+  getPriciest,
+  getOverTwentyFive
 } = require("../controllers/filtersController");
 
 router.get("/morefemales", (req, res) => {
@@ -46,12 +47,17 @@ router.get("/cheapest", (req, res) => {
 
 router.get("/priciest", (req, res) => {
   getPriciest().then(data => {
-    console.log("DATA", data);
     res.json(data);
     return data;
   });
 });
 
+router.get("/twentyfive", (req, res) => {
+  getOverTwentyFive().then(data => {
+    res.json(data);
+    return data;
+  });
+});
 router.get("/search/:name", (req, res) => {
   setSearch(req.params.name).then(data => {
     res.json(data);

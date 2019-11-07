@@ -10,7 +10,7 @@ const getFemales = () => {
   JOIN users ON users.id = user_id
   GROUP BY venues.id, name, latitude, longitude
   HAVING
-  COUNT(CASE WHEN users.gender='Female' THEN 1 ELSE NULL END) > COUNT(CASE WHEN users.gender='Male' THEN 1 ELSE NULL END);
+  COUNT(CASE WHEN users.gender='Female' THEN 1 ELSE NULL END) < COUNT(CASE WHEN users.gender='Male' THEN 1 ELSE NULL END);
   `;
   return db
     .query(queryString)
@@ -30,7 +30,7 @@ const getMales = () => {
   JOIN users ON users.id = user_id
   GROUP BY venues.id, name, latitude, longitude
   HAVING
-  COUNT(CASE WHEN users.gender='Female' THEN 1 ELSE NULL END) < COUNT(CASE WHEN users.gender='Male' THEN 1 ELSE NULL END);
+  COUNT(CASE WHEN users.gender='Female' THEN 1 ELSE NULL END) > COUNT(CASE WHEN users.gender='Male' THEN 1 ELSE NULL END);
   `;
   return db
     .query(queryString)
@@ -124,6 +124,24 @@ const getPriciest = () => {
 };
 
 exports.getPriciest = getPriciest;
+
+const getOverTwentyFive = () => {
+  let queryString = `
+  SELECT venues.id AS venue_id, name, latitude, longitude
+  FROM venues
+    JOIN visits ON venues.id = venue_id
+    JOIN users ON users.id = user_id
+  GROUP BY venues.id, name, latitude, longitude, users.age
+  HAVING
+    COUNT(CASE WHEN users.age >= '25' THEN 1 ELSE NULL END) > COUNT(CASE WHEN users.age <= '25' THEN 1 ELSE NULL END);
+  `;
+  return db
+    .query(queryString)
+    .then(res => res.rows)
+    .catch(err => console.error(null, err.stack));
+};
+
+exports.getOverTwentyFive = getOverTwentyFive;
 
 const setSearch = name => {
   console.log("COLIN", name);
