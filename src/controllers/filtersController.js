@@ -59,6 +59,72 @@ const getTrending = () => {
 
 exports.getTrending = getTrending;
 
+const getShortestLine = () => {
+  let queryString = `
+  SELECT DISTINCT id as venue_id, latitude, longitude, name
+FROM (
+  SELECT venues.id, reviews.line_size, venues.latitude, venues.longitude, venues.name
+  FROM venues
+    INNER JOIN visits
+    ON venues.id = visits.venue_id
+    INNER JOIN reviews
+    ON visits.id = reviews.visit_id
+  ORDER BY reviews.line_size ASC
+) a
+LIMIT 5;
+  `;
+  return db
+    .query(queryString)
+    .then(res => res.rows)
+    .catch(err => console.error(null, err.stack));
+};
+
+exports.getShortestLine = getShortestLine;
+
+const getCheapest = () => {
+  let queryString = `
+  SELECT DISTINCT id as venue_id, latitude, longitude, name
+FROM (
+  SELECT venues.id, reviews.entry_fee, venues.latitude, venues.longitude, venues.name
+  FROM venues
+    INNER JOIN visits
+    ON venues.id = visits.venue_id
+    INNER JOIN reviews
+    ON visits.id = reviews.visit_id
+  ORDER BY reviews.entry_fee ASC
+) a
+LIMIT 3;
+  `;
+  return db
+    .query(queryString)
+    .then(res => res.rows)
+    .catch(err => console.error(null, err.stack));
+};
+
+exports.getCheapest = getCheapest;
+
+const getPriciest = () => {
+  let queryString = `
+  SELECT DISTINCT id as venue_id, latitude, longitude, name
+  FROM (
+    SELECT venues.id, reviews.entry_fee, venues.latitude, venues.longitude, venues.name
+    FROM venues
+      INNER JOIN visits
+      ON venues.id = visits.venue_id
+      INNER JOIN reviews
+      ON visits.id = reviews.visit_id
+    ORDER BY reviews.entry_fee DESC
+  ) a
+  LIMIT 2;
+  `;
+  return db
+    .query(queryString)
+    .then(res => res.rows)
+    .catch(err => console.error(null, err.stack));
+};
+
+exports.getPriciest = getPriciest;
+
 const setSearch = name => {
   console.log("COLIN", name);
   let queryString = `
