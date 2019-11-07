@@ -354,7 +354,7 @@ VALUES
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img,music_type)
 VALUES
-  (1, 10, 10, 'semiFormal', 'https://images.unsplash.com/flagged/photo-1565829120532-c85c4cbb503c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60', 'Top40');
+  (1, 10, 10, 'none', 'https://images.unsplash.com/flagged/photo-1565829120532-c85c4cbb503c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60', 'Top40');
 
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img,music_type)
@@ -364,7 +364,7 @@ VALUES
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img,music_type)
 VALUES
-  (1, 5, 10, 'semiFormal', 'https://images.unsplash.com/photo-1549779930-f9b29ebe3a1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60', 'Rock');
+  (1, 5, 10, 'none', 'https://images.unsplash.com/photo-1549779930-f9b29ebe3a1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60', 'Rock');
 
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img,music_type)
@@ -374,7 +374,7 @@ VALUES
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img,music_type)
 VALUES
-  (1, 6, 0, 'semiFormal', 'https://images.unsplash.com/photo-1547074236-726a065e5ddc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60', 'Rock');
+  (1, 6, 0, 'none', 'https://images.unsplash.com/photo-1547074236-726a065e5ddc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60', 'Rock');
 
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img,music_type)
@@ -384,12 +384,12 @@ VALUES
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img,music_type)
 VALUES
-  (1, 7, 20, 'formal', 'https://images.unsplash.com/photo-1538833726256-445b558d6078?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60', 'Edm');
+  (1, 7, 20, 'none', 'https://images.unsplash.com/photo-1538833726256-445b558d6078?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60', 'Edm');
 
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img,music_type)
 VALUES
-  (1, 5, 25, 'formal', 'https://images.unsplash.com/photo-1559136212-dbdbb5bafca1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60', 'Rock');
+  (1, 5, 25, 'none', 'https://images.unsplash.com/photo-1559136212-dbdbb5bafca1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60', 'Rock');
 
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img,music_type)
@@ -399,7 +399,7 @@ VALUES
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img,music_type)
 VALUES
-  (1, 3, 5, 'formal', 'https://images.unsplash.com/photo-1514447357535-f21ac8c34538?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60', 'Top40');
+  (1, 3, 5, 'none', 'https://images.unsplash.com/photo-1514447357535-f21ac8c34538?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60', 'Top40');
 
 INSERT INTO reviews
   (visit_id, line_size, entry_fee, dress_code, img,music_type)
