@@ -19,14 +19,12 @@ const getUser = function(cookieId) {
 exports.getUser = getUser;
 
 const getUserByEmail = email => {
-  //console.log("This is the email", email);
   let queryString = `
   SELECT * from users where email = '${email}';
   `;
   return db
     .query(queryString)
     .then(res => {
-      //console.log("Query results", res.rows);
       return res.rows;
     })
     .catch(err => console.error(null, err.stack));
@@ -34,14 +32,12 @@ const getUserByEmail = email => {
 exports.getUserByEmail = getUserByEmail;
 
 const getUsers = () => {
-  //console.log("This is the email", email);
   let queryString = `
   SELECT * from users;
   `;
   return db
     .query(queryString)
     .then(res => {
-      //console.log("Query results", res.rows);
       return res.rows;
     })
     .catch(err => console.error(null, err.stack));

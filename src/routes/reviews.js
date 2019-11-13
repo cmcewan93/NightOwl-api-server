@@ -20,19 +20,13 @@ router.get("/:id", (req, res) => {
 });
 
 router.post("/", (req, res) => {
-  //console.log("@#$@$@#$@#", req.body);
   let review = req.body;
   addReview(review)
     .then(data => {
-      console.log(data);
       res.send(data);
     })
     .catch(err => {
       console.error(null, err.stack);
     });
 });
-// module.exports = router;
-// router.post("/upload", (req, res) => {
-
-// });
 module.exports = router;

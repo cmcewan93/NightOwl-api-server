@@ -144,7 +144,6 @@ const getOverTwentyFive = () => {
 exports.getOverTwentyFive = getOverTwentyFive;
 
 const setSearch = name => {
-  console.log("COLIN", name);
   let queryString = `
   SELECT id AS venue_id, name, latitude, longitude 
   FROM venues 

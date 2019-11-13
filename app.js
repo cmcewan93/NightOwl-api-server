@@ -13,6 +13,8 @@ const app = express();
 
 const cookieSession = require("cookie-session");
 
+
+// Routes
 const userRoutes = require("./src/routes/users");
 const venueRoutes = require("./src/routes/venues");
 const authenticationRoutes = require("./src/routes/authentication");
@@ -42,6 +44,6 @@ app.use("/", authenticationRoutes);
 
 app.listen(PORT, () => {
   console.log(
-    `Final Project listening on port ${process.env.PORT} in ${ENV} mode`
+    `Night Owl Api listening on port ${process.env.PORT} in ${ENV} mode`
   );
 });
